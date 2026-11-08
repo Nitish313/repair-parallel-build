@@ -1,0 +1,10 @@
+INFO service started
+INFO listening on port 8080
+WARN slow response from db (1200 ms)
+
+ERROR connection reset by peer
+INFO request handled
+DEBUG cache warm-up
+ERROR timeout waiting for lock
+WARN retrying job 42
+INFO shutting down

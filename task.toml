@@ -1,0 +1,35 @@
+schema_version = "1.4"
+artifacts = []
+
+[task]
+name = "nitish-anand/repair-parallel-build"
+version = "1.0.0"
+description = "Repair a C project's recursive Makefiles so that parallel builds never race, header and generated-file dependencies are exact, release and debug variants do not share objects, and no-op builds do nothing."
+keywords = ["make", "build-systems", "c", "parallel-builds", "debugging"]
+[[task.authors]]
+name = "Nitish Anand"
+
+[metadata]
+difficulty = "medium"
+category = "build-tooling"
+
+[verifier]
+timeout_sec = 600.0
+collect = []
+
+[verifier.env]
+
+[agent]
+timeout_sec = 3600.0
+
+[environment]
+network_mode = "public"
+build_timeout_sec = 600.0
+os = "linux"
+cpus = 2
+memory_mb = 2048
+mcp_servers = []
+
+[environment.env]
+
+[solution.env]
